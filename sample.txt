@@ -69,7 +69,7 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
       "Resource": "arn:aws:s3:::my-bucketcsv"
     },
     {
-      "Effect": "Allow",
+      "Effect": "deny",
       "Action": ["s3:GetObject", "s3:PutObject"],
       "Resource": "arn:aws:s3:::my-bucketcsv/terraform"
     }
